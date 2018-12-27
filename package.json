@@ -1,0 +1,55 @@
+{
+  "name": "artemis-data",
+  "version": "0.1.0",
+  "description": "A data(fetched from server) management library for your redux store",
+  "main": "lib/artemis-data.js",
+  "module": "es/artemis-data.js",
+  "typings": "./index.d.ts",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "redux",
+    "rest",
+    "normalized",
+    "data",
+    "management"
+  ],
+  "author": "huxwfun@gmail.com",
+  "license": "MIT",
+  "peerDependencies": {
+    "normalizr": "^3.0.0",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-external-helpers": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "normalizr": "^3.3.0",
+    "redux": "^4.0.1",
+    "regenerator-runtime": "^0.13.1",
+    "rollup": "^0.68.2",
+    "rollup-plugin-babel": "^4.1.0",
+    "standard": "^12.0.1",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {},
+  "npmName": "artemis-data",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ],
+  "jest": {
+    "testRegex": "(/test/.*\\.spec\\.js)$"
+  },
+  "sideEffects": false
+}

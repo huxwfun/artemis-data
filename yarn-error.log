@@ -1,0 +1,85 @@
+Arguments: 
+  /Users/shawnhu/.nvm/versions/node/v10.9.0/bin/node /Users/shawnhu/.nvm/versions/node/v10.9.0/bin/yarn add artemis-data
+
+PATH: 
+  /Users/shawnhu/istio-1.0.2/bin:/usr/local/opt/mysql-client/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/shawnhu/istio-1.0.2/bin:/usr/local/opt/mysql-client/bin:/Users/shawnhu/.nvm/versions/node/v10.9.0/bin
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  10.9.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/artemis-data: Not found
+      at Request.params.callback [as _callback] (/Users/shawnhu/.nvm/versions/node/v10.9.0/lib/node_modules/yarn/lib/cli.js:61073:18)
+      at Request.self.callback (/Users/shawnhu/.nvm/versions/node/v10.9.0/lib/node_modules/yarn/lib/cli.js:120166:22)
+      at Request.emit (events.js:182:13)
+      at Request.<anonymous> (/Users/shawnhu/.nvm/versions/node/v10.9.0/lib/node_modules/yarn/lib/cli.js:121138:10)
+      at Request.emit (events.js:182:13)
+      at IncomingMessage.<anonymous> (/Users/shawnhu/.nvm/versions/node/v10.9.0/lib/node_modules/yarn/lib/cli.js:121060:12)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1085:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "artemis-data",
+    "version": "0.1.0",
+    "description": "A data(fetched from server) management library for your redux store",
+    "main": "lib/artemis-data.js",
+    "module": "es/artemis-data.js",
+    "typings": "./index.d.ts",
+    "scripts": {
+      "test": "jest --coverage"
+    },
+    "keywords": [
+      "redux",
+      "rest",
+      "normalized",
+      "data",
+      "management"
+    ],
+    "author": "huxwfun@gmail.com",
+    "license": "MIT",
+    "peerDependencies": {
+      "normalizr": "^3.3.0",
+      "redux": "^4.0.1"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.2.2",
+      "@babel/preset-env": "^7.2.3",
+      "babel-cli": "^6.26.0",
+      "babel-core": "^7.0.0-bridge.0",
+      "babel-jest": "^23.6.0",
+      "jest": "^23.6.0",
+      "normalizr": "^3.3.0",
+      "redux": "^4.0.1",
+      "regenerator-runtime": "^0.13.1",
+      "typescript": "^3.2.2"
+    },
+    "dependencies": {},
+    "npmName": "artemis-data",
+    "npmFileMap": [
+      {
+        "basePath": "/dist/",
+        "files": [
+          "*.js"
+        ]
+      }
+    ],
+    "jest": {
+      "testRegex": "(/test/.*\\.spec\\.js)$"
+    },
+    "sideEffects": false
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
