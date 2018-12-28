@@ -1,13 +1,17 @@
 {
   "name": "artemis-data",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A data(fetched from server) management library for your redux store",
   "main": "lib/artemis-data.js",
   "module": "es/artemis-data.js",
   "typings": "./index.d.ts",
   "scripts": {
+    "clean": "rimraf lib dist es coverage",
+    "lint": "standard src test",
+    "pretest": "npm run build",
     "test": "jest --coverage",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepare": "npm run clean && npm run lint && npm test"
   },
   "keywords": [
     "redux",
@@ -35,6 +39,7 @@
     "regenerator-runtime": "^0.13.1",
     "rollup": "^0.68.2",
     "rollup-plugin-babel": "^4.1.0",
+    "rollup-plugin-local-resolve": "^1.0.7",
     "standard": "^12.0.1",
     "typescript": "^3.2.2"
   },

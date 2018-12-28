@@ -1,6 +1,5 @@
 import babel from 'rollup-plugin-babel'
-import pkg from './package.json'
-
+import localResolve from 'rollup-plugin-local-resolve'
 import pkg from './package.json'
 
 export default [
@@ -12,7 +11,7 @@ export default [
       ...Object.keys(pkg.dependencies || {}),
       ...Object.keys(pkg.peerDependencies || {})
     ],
-    plugins: [babel()]
+    plugins: [babel(), localResolve()]
   },
 
   // ES
@@ -23,6 +22,6 @@ export default [
       ...Object.keys(pkg.dependencies || {}),
       ...Object.keys(pkg.peerDependencies || {})
     ],
-    plugins: [babel()]
+    plugins: [babel(), localResolve()]
   }
 ]

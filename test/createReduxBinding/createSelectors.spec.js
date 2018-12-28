@@ -19,8 +19,8 @@ describe('selectors tests', () => {
     }
   }
   it('should create request selector successfully', () => {
-    expect(selectors.request(2, state)).toBe(request2)
-    expect(selectors.request(3, state)).toBeNull()
+    expect(selectors.request(state, 2)).toBe(request2)
+    expect(selectors.request(state, 3)).toBeNull()
   })
   it('should create entities selector successfully', () => {
     const entites = selectors.entities(state)
